@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$basic: 'SpoqaHanSansNeo-Regular';
+$basic_c: #242424;
+$basic_c2: #555;
+$bgc: #f7f7f7;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $basic;
+    color: $basic_c;
+    letter-spacing: -1px;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 64px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #dfdfdf;
+    background-color: hsla(0, 0%, 100%, .9);
+    position: sticky;
+    top: 0;
+
+    .logo {
+        width: 56px;
+        height: 24px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .menu {
+        width: 418.78px;
+        height: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+
+            li {
+                width: 104.38px;
+                text-align: center;
+            }
+        }
+
+        .login {
+            width: 81.33px;
+            height: 32px;
+            font-family: $basic;
+            font-size: 12px;
+            border: none;
+            border-radius: 100px;
+            background-color: #333;
+            color: #fff;
+        }
+    }
+}
+
+.title {
+
+    h2 {
+        font-size: 49px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: -2px;
+    }
+
+    p {
+        font-size: 22px;
+        color: $basic_c2;
+        line-height: 160%;
+    }
+
+    &C {
+        text-align: center;
+        margin-bottom: 60px;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 16px;
+
+    .sub_script{
+        width: 450px;
+        height: 56px;
+        background-color: #333;
+        font-family: $basic;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        border-radius: 100px;
+    }
+    
+}

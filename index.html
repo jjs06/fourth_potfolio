@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+
+    <script src="js/book_api.js"></script>
+    <script src="js/book_sc4.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/full-logo.f9246fa0ca04c7cef80a5d0f5409f0be.png"
+                alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li>기업문의</li>
+                <li>회사소개</li>
+                <li>계정관리</li>
+            </ul>
+            <button class="login">로그인</button>
+        </div>
+    </header>
+    <div id="slider">
+        <div class="bg">
+            <div class="t">
+                <h1></h1>
+                <p class="logo2"></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="section">
+        <div class="sc1">
+            <div class="title titleC">
+                <h2>
+                    당신을 기다리는
+                    <br>
+                    15만 권의 도서
+                </h2>
+                <p>
+                    첫 달 무료 구독을 통해
+                    <br>
+                    어떤 도서가 있는지 확인해보세요
+                </p>
+            </div>
+
+            <div class="slide">
+                <div class="sd1 sd">
+                </div>
+                <div class="sd2 sd">
+                </div>
+                <div class="sd3 sd">
+                </div>
+            </div>
+        </div>
+
+        <div class="sc2">
+
+            <div class="title titleC">
+                <h2>
+                    나만의 공간을 아름답게
+                    <br>
+                    채워주는 오브제북
+                </h2>
+                <p>
+                    이미지와 사운드로 극대화된
+                    <br>
+                    책의 감성을 오롯이 느껴보세요.
+                </p>
+            </div>
+
+            <div class="video">
+                <video src="https://d3udu241ivsax2.cloudfront.net/common/video/brand/objectbook.mp4" preload="metadata"
+                    muted="muted" playsinline></video>
+
+                <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/ab-thumbnail.5fe6289d992504bacaa9ef26135eb9db.jpg"
+                    alt="">
+                <button></button>
+
+            </div>
+            <button>오브제북 보러가기 〉</button>
+        </div>
+
+        <div class="sc3">
+            <div class="title titleC">
+                <h2>
+                    싹 다 무제한
+                    <br>
+                    9,900원
+                </h2>
+                <p>
+                    10년치 베스트셀러
+                    <br>
+                    신간 오디오북 장르 소설까지
+                </p>
+            </div>
+
+            <div class="category">
+                <strong class="subtitle">지금 서점 베스트 셀러</strong>
+                <div class="list" id="list0">
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <strong class="subtitle">한 달 이내 출간된 책</strong>
+                <div class="list" id="list1">
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <strong class="subtitle">오디오북 BEST</strong>
+                <div class="list" id="list2">
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <strong class="subtitle">밀리 독점 오리지널 로맨스</strong>
+                <div class="list" id="list3">
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+
+                    <div class="b">
+                        <div class="cover"></div>
+                        <div class="info"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sc4">
+
+            <div class="title titleC">
+                <h2>
+                    관심 분야에 있는 책도
+                    <br>
+                    딱 골라드려요
+                </h2>
+                <p>
+                    검색어 순위를 통해 뽑은
+                    <br>
+                    인기 분야 책들을 확인해보세요
+                </p>
+            </div>
+
+            <div class="teast">
+                <div class="subject">
+                    <button class="c">주식</button>
+                    <button>영어</button>
+                    <button>고전</button>
+                    <button>인테리어</button>
+                    <button>다이어트</button>
+                </div>
+
+                <div class="category2">
+
+                    <div class="list" id="list4">
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+                    </div>
+
+                    <div class="list" id="list5">
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+                    </div>
+
+                    <div class="list" id="list6">
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+                    </div>
+
+                    <div class="list" id="list7">
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+                    </div>
+
+                    <div class="list" id="list8">
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+
+                        <div class="b">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sc5">
+            <div class="title titleC">
+                <h2>
+                    당신이 끝까지 읽을 책을
+                    <br>
+                    알려주는 완독지수
+                </h2>
+                <p>
+                    600만 밀리 회원이 먼저 읽고
+                    <br>
+                    다 읽을 확률과 예상 시간을 알려드려요
+                </p>
+            </div>
+
+            <div class="w-wrap">
+                <div class="w-int">
+
+                    <div class="s-icon">
+                        <div class="subimg">
+                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-card01.a091cde3f19afee102558704e82eefe6.png"
+                                alt="">
+                        </div>
+                        <div class="subimg">
+                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-card02.f1d517fe9b18dc4a7fcdd58f7f57afbe.png"
+                                alt="">
+                        </div>
+                        <div class="subimg">
+                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-card03.099696781998fdcfbc88f69f81ddd990.png"
+                                alt="">
+                        </div>
+                        <div class="subimg">
+                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-card04.178fde7cba62b12c0e4c5ef28fa01528.png"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <div class="cimg">
+                        <div class="moc-up">
+                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-mock-230726@2x.ddb9ae2d5c7790c0cf1b5fb84bd1e3e0.png"
+                                alt="">
+                        </div>
+                        <div class="ex">
+                            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/reading-tooltip.af41ece6e348d4b800680256f27a9892.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sc6">
+            <div class="title titleC">
+                <h2>
+                    관심 분야에 있는 책도
+                    <br>
+                    딱 골라드려요
+                </h2>
+                <p>
+                    검색어 순위를 통해 뽑은
+                    <br>
+                    인기 분야 책들을 확인해보세요
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <div class="bottom">
+        <button class="sub_script">
+            <b>첫달무료</b>
+            로 독서 시작하기
+        </button>
+    </div>
+
+    <div>
+        <div>
+            <div>
+                <p>전자책 정기구독</p>
+                <div>
+                    <span>월</span>
+                    <h3>9,900<b>원</b></h3>
+                </div>
+
+            </div>
+            <div></div>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>
