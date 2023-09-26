@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브랜드 | 밀리 sub Copy</title>
+
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="shortcut icon" type="image/png" href="https://www.millie.co.kr/favicon/android-icon.png">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+
+    <script src="js/subbook_api.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/sub_booklist_api.js"></script>
+    <script src="js/text.js"></script>
+    <script src="js/bgc.js"></script>
+    <script src="js/link.js"></script>
+
+    <script>
+        $(function () {
+            for (i in $('.b')) {
+                $('.b').eq(i).children('h3').click(function () {
+
+                    $(this).toggleClass('bgi');
+
+                    $(this).siblings('.bc').toggle();
+
+                    $(this).parent('.b').siblings().children('.bc').hide().end().find('.b,h3').removeClass('bgi');
+                });
+            }
+
+            $('.rvb').keyup(function (e) {
+                let content = $(this).val();
+
+                if (content.length == 0 || content == '') {
+                    $('.tn').text('0/50');
+                } else {
+                    $('.tn').text(content.length + '/50');
+                }
+
+                if (content.length >= 5) {
+                    $('.pc').css('opacity', 1);
+                }
+                else {
+                    $('.pc').css('opacity', 0.4);
+                }
+            });
+
+            $('.vm').click(function () {
+                $('.intro>p').toggleClass('open');
+                if($(this).text()=='접어보기'){
+                    $(this).text('더보기') ;
+                }
+                else{
+                    $(this).text('접어보기');
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/brand/full-logo.f9246fa0ca04c7cef80a5d0f5409f0be.png"
+                alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li>기업문의</li>
+                <li>회사소개</li>
+                <li>계정관리</li>
+            </ul>
+            <button class="login">로그인</button>
+        </div>
+    </header>
+
+    <div id="section">
+        <div class="sc-wrap">
+            <div class="sc1">
+                <div class="book">
+                    <img src="https://cover.millie.co.kr/service/cover/179621564/3fca35c70cfc4b7eb074535eb493b900.jpg?w=220&q=80"
+                        alt="">
+                </div>
+                <div class="textbox">
+                    <div class="title-info"></div>
+                    <div class="price"></div>
+
+                    <div class="info">
+                        <div class="li">
+                            <div class="imgs">
+                                <div class="i i1">
+                                    <div class="bg bg1"></div>
+                                </div>
+                                <div class="i i2">
+                                    <div class="bg bg2"></div>
+                                </div>
+                                <div class="i i3">
+                                    <div class="bg bg3"></div>
+                                </div>
+                            </div>
+                            <p>이 책이 담긴 서재</p>
+                            <h4>536개</h4>
+
+                        </div>
+                        <div class="li">
+                            <div class="m"><img
+                                    src="https://d3udu241ivsax2.cloudfront.net/v3/images/bookDetail/review-mark.ffaa0d9de623bd5c8626faf1f7448f58.png"
+                                    alt=""></div>
+                            <p>한 줄 리뷰</p>
+                            <h4>2개</h4>
+                        </div>
+                        <div class="li">
+                            <div class="m">
+                                <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/bookDetail/post-mark.e6660d3d2be8d740e6accf5f63489487.png"
+                                    alt="">
+                            </div>
+                            <p>첫 포스트 작성하고
+                                <br>
+                                +1 밀리
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sc2">
+                <div class="sub-title">
+                    <div class="ic">
+                        <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/bookDetail/complete-book.2f295724c20991f29a7afd8b2d10a5df.png"
+                            alt="">
+                    </div>
+                    <button>밀리 완독지수</button>
+                </div>
+
+                <div class="grap">
+                    <div class="wandoc-wrap">
+                        <div class=" wandoc">
+                            <div class="wandoc1"></div>
+                            <div class="wandoc2"></div>
+                            <div class="wd1 wd">
+                                <p>홀릭</p>
+                            </div>
+                            <div class="wd2 wd">
+                                <p>밀리 픽</p>
+                            </div>
+                            <div class="wd3 wd">
+                                <p>마니아</p>
+                            </div>
+                            <div class="wd4 wd">
+                                <p>히든</p>
+                            </div>
+
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <div class="dot"></div>
+
+
+                        </div>
+                    </div>
+                    <div class="wandoc-info-wrap">
+                        <div class="wandoc-info">
+                            <div class="hm">
+                                <h4>마니아</h4>
+                                <p>소설분야 평균대비</p>
+                            </div>
+
+                            <div class="hm">
+                                <h4>완독할 확률 66%</h4>
+                                <p>평균 67% 대비</p>
+                                <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/management/down-arrow.758fe682666b29bd35586b55f8036851.png"
+                                    alt="">
+                            </div>
+                            <div class="hm">
+                                <h4>완독 예상 시간 174분</h4>
+                                <p>평균 169분 대비</p>
+                                <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/management/up-arrow.477a9800737aa6280598089496800c63.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="wandoc-info">
+                            <div class="hm">
+                                <h4>홀릭</h4>
+                                <p>부담없이 술술 읽다보면 빠져드는 책</p>
+                            </div>
+
+                            <div class="hm">
+                                <h4>밀리픽</h4>
+                                <p>밀리 회원들이 검증한 후회 없는 책</p>
+                            </div>
+
+                            <div class="hm">
+                                <h4>히든</h4>
+                                <p>밀리 회원들의 발견을 기다리고 있는 책</p>
+                            </div>
+
+                            <div class="hm">
+                                <h4>마니아</h4>
+                                <p>마니아들이 푹 빠진 읽을수록 보람 있는 책</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sc3">
+                <div class="book-info">
+                    <div class="book-intro ">
+                        <h3>책소개</h3>
+                        <div class="intro">
+                            <p></p>
+                            <button class="vm">더보기</button>
+                        </div>
+                        <div class="bi-wrap">
+                            <div class="bi">
+                                <div class="li">
+                                    <p>카테고리</p>
+                                    <h4>소설</h4>
+                                </div>
+                                <div class="li">
+                                    <p>용량</p>
+                                    <h4>20.17 MB</h4>
+                                </div>
+                                <div class="li">
+                                    <p>출판사</p>
+                                    <h4 class="pub"></h4>
+                                </div>
+                                <div class="li">
+                                    <p>종이책 출간일</p>
+                                    <h4 class="day"></h4>
+                                </div>
+                                <div class="li">
+                                    <p>전자책 출간일</p>
+                                    <h4>2022.06.07</h4>
+                                </div>
+                                <div class="li">
+                                    <p>ISBN</p>
+                                    <h4 class="isbn"></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="book-index b">
+                        <h3>목차</h3>
+                        <div class="index bc"></div>
+                    </div>
+
+                    <div class="book-translators b">
+                        <h3>저자 소개</h3>
+                        <div class="translators bc"></div>
+                    </div>
+
+                    <div class="book-publisher-review b">
+                        <h3>출판사 서평</h3>
+                        <div class="publisher-review bc"></div>
+                    </div>
+                </div>
+                <div class="book-review">
+                    <h3>한줄 리뷰</h3>
+
+                    <ul class="review">
+                        <li>
+                            <div class="profile"></div>
+                            <div class="rv">
+                                <p class="us">
+                                    nov123
+                                    <strong class="best"> Best</strong>
+                                    <strong class="rank">1등</strong>
+                                </p>
+                                <span class="date">2023.00.00</span>
+                                <pre>부담없이 읽기 좋지만, 아쉬워요</pre>
+                                <div class="like">
+                                    <p>이 리뷰가 마음에 드시나요?</p>
+                                    <button class="lb">
+                                        <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/bookDetail/heart-off.69cb1ab0f3666823a7d476c3dc77518e.png"
+                                            alt="">
+                                        <span>2</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="profile"></div>
+                            <div class="rv">
+                                <p class="us">
+                                    aninov
+                                    <strong class="best"> Best</strong>
+                                    <strong class="rank">1등</strong>
+                                </p>
+                                <span class="date">2023.00.00</span>
+                                <pre>생각보다 별로</pre>
+                                <div class="like">
+                                    <p>이 리뷰가 마음에 드시나요?</p>
+                                    <button class="lb">
+                                        <img src="https://d3udu241ivsax2.cloudfront.net/v3/images/bookDetail/heart-off.69cb1ab0f3666823a7d476c3dc77518e.png"
+                                            alt="">
+                                        <span>0</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="wrv">
+                        <div class="profile"></div>
+
+                        <div class="tbox">
+                            <label for="">
+                                <span>한 줄 리뷰</span>
+                                <textarea class="rvb" maxlength="50" placeholder="다양한 생각을 남겨주세요"></textarea>
+                            </label>
+                            <span class="tn">0/50</span>
+                        </div>
+                        <button class="pc">등록</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sc4">
+                <img src="https://d2j6uvfek9vas1.cloudfront.net/book_category_banner/6507aff4c401f.jpg" alt="">
+            </div>
+
+            <div class="sc5">
+                <h3>다른 회원들이 함께 담은 책</h3>
+                <div class="slider">
+                    <div class="slider-inner">
+                        <div class="slider-item">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="cover"></div>
+                            <div class="info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-menu">
+            <div class="side-menu-wrap">
+                <nav>
+                    <ul class="s-menu">
+                        <li>내서재에 담기</li>
+                        <li>다운로드</li>
+                        <li>My Favorite</li>
+                        <li>공유하기</li>
+                        <li>포스트 쓰기</li>
+                    </ul>
+                </nav>
+
+                <div class="read-book">
+                    <button class="read">바로읽기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="f-wrap">
+            <div class="f1">
+                <p>(주) 밀리의 서재</p>
+                <div class="social">
+                    <div class="insta"></div>
+                    <div class="yutube"></div>
+                    <div class="kakao"></div>
+                </div>
+            </div>
+
+            <div class="f2">
+                <div class="company-info">
+                    <span class="c-button">사업자 정보 펼쳐보기</span>
+                    <div class="c-info">
+                        <ul>
+                            <li>대표이사 : 서영택</li>
+                            <li>사업자등록번호 : 423-88-00370</li>
+                            <li>호스팅 제공자 : (주)밀리의 서재</li>
+                        </ul>
+                        <ul>
+                            <li>통신판매업 신고번호 : 2016-서울마포-2012호
+                            </li>
+                            <li>주소 : 서울특별시 마포구 양화로 45, 16층 (메세나폴리스 세아타워)</li>
+                        </ul>
+                        <ul>
+                            <li>개인정보보호 관련 문의 : privacy@millie.town
+                            </li>
+                            <li>마케팅 제휴 문의 : business@millie.town</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="info-m">
+                    <li>이용약관</li>
+                    <li>개인정보처리방침</li>
+                    <li>청소년보호정책</li>
+                    <li>고객센터</li>
+                    <li>B2B 문의</li>
+                    <li>콘텐츠 제휴문의</li>
+                    <li>뷰어 다운로드</li>
+                    <li>회사 소개</li>
+                </ul>
+                <p class="copy-right">Copyright &copy; 2022 밀리의 서재 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let slider = document.querySelector(".slider")
+        let innerSlider = document.querySelector(".slider-inner")
+        let pressed = false
+        let startx
+        let x
+
+        slider.addEventListener("mousedown", e => {
+            pressed = true
+            startx = e.offsetX - innerSlider.offsetLeft
+            slider.style.cursor = "grabbing"
+        })
+
+        slider.addEventListener("mouseenter", () => {
+            slider.style.cursor = "grab"
+        })
+
+        slider.addEventListener("mouseup", () => {
+            slider.style.cursor = "grab"
+        })
+
+        window.addEventListener("mouseup", () => {
+            pressed = false
+        })
+
+        slider.addEventListener("mousemove", e => {
+            if (!pressed) return
+            e.preventDefault()
+            x = e.offsetX
+
+            innerSlider.style.marginLeft = `${x - startx}px`
+            checkboundary()
+        })
+
+        function checkboundary() {
+            let outer = slider.getBoundingClientRect()
+            let inner = innerSlider.getBoundingClientRect()
+
+            if (parseInt(innerSlider.style.marginLeft) > 0) {
+                innerSlider.style.marginLeft = "0px"
+            } else if (inner.right < outer.right) {
+                innerSlider.style.marginLeft = `-${inner.width - outer.width}px`
+            }
+        }
+    </script>
+</body>
+
+</html>

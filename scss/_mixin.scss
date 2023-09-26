@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+@mixin basic_button {
+    background-color: #333;
+    font-family: $basic;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+}
+
+@mixin click_button {
+    background-color: transparent;
+    border: 1px solid $basic_c;
+    border-radius: 100px;
+    font-family: $basic;
+    cursor: pointer;
+}
+
+@mixin bf {
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin play_b {
+    width: 56px;
+    height: 56px;
+
+    cursor: pointer;
+
+    border: none;
+
+    background: {
+        image: url('https://d3udu241ivsax2.cloudfront.net/v3/images/brand/play-btn.2793db10c08e75f4d3ea5226f19f650b.png');
+        position: 0 0;
+        repeat: no-repeat;
+        size: cover;
+        color: transparent;
+    }
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin social_icon {
+    width: 24px;
+    height: 24px;
+}
+
+@mixin h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+

@@ -1,0 +1,1054 @@
+@charset "UTF-8";
+@import url("//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spoqa Han Sans Neo";
+}
+
+body {
+  color: #242424;
+  letter-spacing: -0.6px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+button {
+  letter-spacing: -0.6px;
+}
+
+header {
+  width: 100%;
+  height: 64px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid #dfdfdf;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header .logo {
+  width: 56px;
+  height: 24px;
+}
+header .logo img {
+  width: 100%;
+}
+header .menu {
+  width: 418.78px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+header .menu ul li {
+  width: 104.38px;
+  text-align: center;
+}
+header .menu .login {
+  width: 81.33px;
+  height: 32px;
+  font-size: 12px;
+  background-color: #333;
+  font-family: "Spoqa Han Sans Neo";
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+}
+
+.title h2 {
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+  opacity: 0;
+}
+.title p {
+  font-size: 22px;
+  color: #555;
+  line-height: 160%;
+  opacity: 0;
+}
+.titleC {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 16px;
+  z-index: 10;
+}
+.bottom .sub_script {
+  width: 450px;
+  height: 56px;
+  font-size: 16px;
+  background-color: #333;
+  font-family: "Spoqa Han Sans Neo";
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+}
+
+footer {
+  width: 100%;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+footer .f-wrap {
+  width: 1440px;
+  padding: 24px 16px 32px;
+}
+footer .f-wrap .f1 {
+  width: 100%;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .f-wrap .f1 p {
+  font-size: 16px;
+  font-weight: 700;
+}
+footer .f-wrap .f1 .social {
+  display: flex;
+}
+footer .f-wrap .f1 .social .insta {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/common/sns-instagram.ba9357bd6c1bb50854389e9f15f76d76.png");
+  background-size: cover;
+}
+footer .f-wrap .f1 .social .yutube {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/common/sns-youtube.b399a84a750e221ded9fef98ddeca396.png");
+  background-size: cover;
+}
+footer .f-wrap .f1 .social .kakao {
+  width: 24px;
+  height: 24px;
+  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/common/sns-kakaotalk.fa50e1326498ebcac6ba4a1e68f66882.png");
+  background-size: cover;
+}
+footer .f-wrap .f2 {
+  width: 100%;
+}
+footer .f-wrap .f2 .company-info {
+  color: #a5a5a5;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+}
+footer .f-wrap .f2 .company-info span {
+  width: 94.96px;
+  padding-right: 12px;
+  cursor: pointer;
+  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/common/down-arr.0b293f1f10f97e5a2a744710ef0d1133.png");
+  background-position-x: right;
+  background-position-y: center;
+  background-size: 12px;
+  background-repeat: no-repeat;
+}
+footer .f-wrap .f2 .company-info .c-info {
+  margin-top: 8px;
+  padding-right: 12px;
+  display: none;
+}
+footer .f-wrap .f2 .company-info .c-info ul {
+  display: flex;
+}
+footer .f-wrap .f2 .company-info .c-info ul:last-child {
+  margin-top: 12px;
+}
+footer .f-wrap .f2 .company-info .c-info ul li {
+  line-height: 16px;
+}
+footer .f-wrap .f2 .company-info .c-info ul li:not(:last-child) {
+  margin-right: 12px;
+}
+footer .f-wrap .f2 .info-m {
+  font-size: 12px;
+  color: #6f6f6f;
+  margin-top: 24px;
+  display: flex;
+}
+footer .f-wrap .f2 .info-m li {
+  padding-right: 12px;
+  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/common/small-gray-arr.4f0a51f549bc24f1bcee05d95f6a97f6.png");
+  background-position-x: right;
+  background-position-y: center;
+  background-size: 12px;
+  background-repeat: no-repeat;
+}
+footer .f-wrap .f2 .info-m li:not(:last-child) {
+  margin-right: 12px;
+}
+footer .f-wrap .f2 .info-m li:nth-of-type(2) {
+  font-weight: 700;
+}
+footer .f-wrap .f2 .copy-right {
+  font-size: 10px;
+  color: #6f6f6f;
+  margin-top: 24px;
+}
+
+#section {
+  width: 1440px;
+  line-height: 1.6;
+  border-right: 1px solid #dfdfdf;
+  border-left: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  display: flex;
+}
+#section .sc-wrap {
+  width: 1158px;
+}
+#section .sc-wrap .sc1 {
+  width: 100%;
+  padding: 32px 24px;
+  display: flex;
+  border-bottom: 12px solid #f7f7f7;
+}
+#section .sc-wrap .sc1 .book {
+  width: 220px;
+  height: 323px;
+  border-radius: 0 6px 6px 0;
+  box-shadow: 12px 8px 24px rgba(0, 0, 0, 0.2), 4px 8px 8px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+  position: relative;
+}
+#section .sc-wrap .sc1 .book::before {
+  content: "";
+  width: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 0.01%, rgba(0, 0, 0, 0.05) 5.97%, hsla(0, 0%, 100%, 0.3) 15.89%, hsla(0, 0%, 100%, 0) 28.19%, rgba(0, 0, 0, 0.05) 0, rgba(0, 0, 0, 0.0277927) 46.96%, hsla(0, 0%, 100%, 0) 47.51%, hsla(0, 0%, 100%, 0.1) 54.14%, hsla(0, 0%, 100%, 0));
+}
+#section .sc-wrap .sc1 .book img {
+  width: 100%;
+}
+#section .sc-wrap .sc1 .textbox {
+  width: 890px;
+  padding-left: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#section .sc-wrap .sc1 .textbox .title-info h3 {
+  height: 32px;
+  font-size: 20px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+#section .sc-wrap .sc1 .textbox .title-info p {
+  font-size: 12px;
+  color: #8b8b8b;
+  margin-bottom: 16px;
+}
+#section .sc-wrap .sc1 .price {
+  width: 100%;
+}
+#section .sc-wrap .sc1 .price h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+#section .sc-wrap .sc1 .price h3 span {
+  font-size: 16px;
+}
+#section .sc-wrap .sc1 .info {
+  width: 100%;
+  height: 88px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
+  background-color: #fafaf6;
+}
+#section .sc-wrap .sc1 .info .li {
+  width: 33.3%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#section .sc-wrap .sc1 .info .li:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 40px;
+  background-color: #dfdfdf;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+#section .sc-wrap .sc1 .info .li .imgs {
+  width: 48px;
+  height: 24px;
+  display: flex;
+  text-align: center;
+}
+#section .sc-wrap .sc1 .info .li .imgs .i {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid #fafaf6;
+}
+#section .sc-wrap .sc1 .info .li .imgs .i2 {
+  transform: translateX(-50%);
+}
+#section .sc-wrap .sc1 .info .li .imgs .i3 {
+  transform: translateX(-100%);
+}
+#section .sc-wrap .sc1 .info .li .imgs .i .bg {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#section .sc-wrap .sc1 .info .li .imgs .i .bg1 {
+  background-image: url("https://d3uz7kn1zskbbz.cloudfront.net/profile/6152767ec5f12.png");
+}
+#section .sc-wrap .sc1 .info .li .imgs .i .bg2 {
+  background-image: url("https://d3uz7kn1zskbbz.cloudfront.net/profile/0b0fb885a6ed4a77a3717ab408dbb625.png");
+}
+#section .sc-wrap .sc1 .info .li .imgs .i .bg3 {
+  background-image: url("https://ofbxchnhqinp910256.cdn.ntruss.com/160/fff508ecc1d5afd7a150600704ac3ea0.png?type=w&w=160&quality=100");
+}
+#section .sc-wrap .sc1 .info .li .m {
+  width: 24px;
+  height: 23.75px;
+}
+#section .sc-wrap .sc1 .info .li .m img {
+  width: 100%;
+}
+#section .sc-wrap .sc1 .info .li p {
+  width: 100%;
+  font-size: 10px;
+  line-height: 17px;
+  color: #8b8b8b;
+}
+#section .sc-wrap .sc1 .info .li h4 {
+  font-weight: 700;
+}
+#section .sc-wrap .sc2 {
+  width: 100%;
+  padding: 15px 24px;
+  border-bottom: 12px solid #f7f7f7;
+}
+#section .sc-wrap .sc2 .sub-title {
+  display: flex;
+  margin-bottom: 12px;
+  align-items: center;
+}
+#section .sc-wrap .sc2 .sub-title .ic {
+  width: 24px;
+  height: 23px;
+  margin-left: 2px;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+#section .sc-wrap .sc2 .sub-title .ic img {
+  width: 100%;
+}
+#section .sc-wrap .sc2 .sub-title button {
+  border: none;
+  padding-right: 20px;
+  font-size: 14px;
+  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/bookDetail/question-mark.fd5a413b237dd6d113edf8a6e6f1567a.png");
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-color: transparent;
+}
+#section .sc-wrap .sc2 .grap {
+  width: 100%;
+  height: 266px;
+  display: flex;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap {
+  height: 100%;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc {
+  width: 361.09px;
+  height: 242px;
+  margin: 0 16px 24px 24px;
+  position: relative;
+  border: 1px solid #dfdfdf;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc1::after {
+  content: "높음";
+  bottom: -24px;
+  right: 0;
+  position: absolute;
+  font-size: 12px;
+  color: #8b8b8b;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc1::before {
+  content: "낮음";
+  bottom: -24px;
+  left: -24px;
+  position: absolute;
+  font-size: 12px;
+  color: #8b8b8b;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc2::after {
+  content: "완독할 확률(%)";
+  top: 50%;
+  left: -24px;
+  position: absolute;
+  font-size: 12px;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  transform: translateY(-50%) rotate(180deg);
+  color: #8b8b8b;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc2::before {
+  content: "완독 예상 시간(분)";
+  bottom: -24px;
+  left: 50%;
+  position: absolute;
+  font-size: 12px;
+  transform: translateX(-50%);
+  color: #8b8b8b;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc::before {
+  content: "높음";
+  top: 0;
+  left: -24px;
+  position: absolute;
+  font-size: 12px;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  color: #8b8b8b;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc .wd {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc .wd p {
+  color: rgb(223, 223, 223);
+  font-size: 32px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  padding: 0 8px;
+  line-height: 1.6;
+  display: flex;
+  font-weight: 700;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc .wd1 {
+  top: 0;
+  left: 0;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc .wd2 {
+  top: 0;
+  right: 0;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc .wd2 p {
+  justify-content: flex-end;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc .wd3 {
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(135deg, rgba(79, 192, 104, 0.1) 0%, rgba(79, 192, 104, 0) 100%);
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc .wd3 p {
+  color: rgb(79, 192, 104);
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc .wd4 {
+  bottom: 0;
+  left: 0;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc .wd4 p {
+  align-items: flex-end;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc .line {
+  position: absolute;
+  background-color: #dfdfdf;
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc .line1 {
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc .line2 {
+  width: 1px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#section .sc-wrap .sc2 .grap .wandoc-wrap .wandoc .dot {
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  margin-bottom: -12px;
+  border-radius: 50%;
+  border: 6px solid rgb(79, 192, 104);
+  position: absolute;
+  bottom: 49%;
+  left: 51%;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16), 4px 8px 28px rgba(0, 0, 0, 0.08);
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap {
+  width: 708.91px;
+  height: 100%;
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap .wandoc-info {
+  width: 100%;
+  border-radius: 16px;
+  padding: 16px 24px;
+  border: 1px solid #dfdfdf;
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap .wandoc-info:first-child {
+  margin-bottom: 12px;
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap .wandoc-info:first-child .hm {
+  margin-bottom: 0;
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap .wandoc-info:first-child .hm:first-child {
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap .wandoc-info:first-child .hm:first-child h4 {
+  color: rgb(79, 192, 104);
+  font-size: 14px;
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap .wandoc-info:first-child .hm:first-child h4::after {
+  background-color: rgb(79, 192, 104);
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap .wandoc-info:first-child .hm:first-child p {
+  color: rgb(79, 192, 104);
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap .wandoc-info:first-child .hm:not(:first-child) {
+  margin-bottom: 0px;
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap .wandoc-info:first-child .hm h4 {
+  font-size: 12px;
+  margin-right: 5px;
+  padding-right: 5px;
+  color: #6f6f6f;
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap .wandoc-info:first-child .hm p {
+  font-size: 12px;
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap .wandoc-info:first-child .hm img {
+  width: 16px;
+  height: 16px;
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap .wandoc-info .hm {
+  display: flex;
+  align-items: center;
+  color: #8b8b8b;
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap .wandoc-info .hm:not(:last-child) {
+  margin-bottom: 2px;
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap .wandoc-info .hm h4 {
+  margin-right: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+#section .sc-wrap .sc2 .grap .wandoc-info-wrap .wandoc-info .hm h4::after {
+  content: "";
+  width: 1px;
+  height: 11px;
+  background-color: #c1c1c1;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+#section .sc-wrap .sc3 {
+  width: 100%;
+}
+#section .sc-wrap .sc3 .book-info {
+  width: 100%;
+}
+#section .sc-wrap .sc3 .book-info .book-intro {
+  width: 100%;
+  padding: 24px 24px 0 24px;
+}
+#section .sc-wrap .sc3 .book-info .book-intro h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 700;
+}
+#section .sc-wrap .sc3 .book-info .book-intro .intro {
+  width: 100%;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+  position: relative;
+}
+#section .sc-wrap .sc3 .book-info .book-intro .intro p {
+  margin-bottom: 26px;
+  color: #555;
+  max-height: 105px;
+  overflow: hidden;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+#section .sc-wrap .sc3 .book-info .book-intro .intro .open {
+  display: block;
+  max-height: 100%;
+}
+#section .sc-wrap .sc3 .book-info .book-intro .intro .vm {
+  border: none;
+  background-color: transparent;
+  font-family: "Spoqa Han Sans Neo";
+  font-size: 14px;
+  outline: none;
+  line-height: 1.15;
+  color: #a451f7;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#section .sc-wrap .sc3 .book-info .book-intro .bi-wrap {
+  height: 100px;
+  margin: 0 -24px;
+  background-color: #fafaf6;
+  display: flex;
+}
+#section .sc-wrap .sc3 .book-info .book-intro .bi-wrap .bi {
+  width: 840px;
+  height: 100px;
+  display: flex;
+}
+#section .sc-wrap .sc3 .book-info .book-intro .bi-wrap .bi .li {
+  width: 140px;
+  height: 100%;
+  padding: 20px 16px;
+  text-align: center;
+  position: relative;
+}
+#section .sc-wrap .sc3 .book-info .book-intro .bi-wrap .bi .li:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #dfdfdf;
+}
+#section .sc-wrap .sc3 .book-info .book-intro .bi-wrap .bi .li p {
+  font-size: 12px;
+  margin-bottom: 14px;
+  color: #8b8b8b;
+}
+#section .sc-wrap .sc3 .book-info .book-intro .bi-wrap .bi .li h4 {
+  color: #555;
+}
+#section .sc-wrap .sc3 .book-info .book-index {
+  width: 100%;
+  border-bottom: 1px solid #f7f7f7;
+}
+#section .sc-wrap .sc3 .book-info .book-index h3 {
+  padding: 24px;
+  font-size: 16px;
+  font-weight: 700;
+}
+#section .sc-wrap .sc3 .book-info .book-index .index {
+  padding: 0 24px 24px 24px;
+}
+#section .sc-wrap .sc3 .book-info .book-index .index p {
+  color: #555;
+}
+#section .sc-wrap .sc3 .book-info .book-translators {
+  width: 100%;
+  border-bottom: 1px solid #f7f7f7;
+}
+#section .sc-wrap .sc3 .book-info .book-translators h3 {
+  padding: 24px;
+  font-size: 16px;
+  font-weight: 700;
+}
+#section .sc-wrap .sc3 .book-info .book-translators .translators {
+  padding: 0 24px 24px 24px;
+}
+#section .sc-wrap .sc3 .book-info .book-translators .translators p {
+  color: #555;
+}
+#section .sc-wrap .sc3 .book-info .book-publisher-review {
+  width: 100%;
+  border-bottom: 1px solid #f7f7f7;
+}
+#section .sc-wrap .sc3 .book-info .book-publisher-review h3 {
+  padding: 24px;
+  font-size: 16px;
+  font-weight: 700;
+}
+#section .sc-wrap .sc3 .book-info .book-publisher-review .publisher-review {
+  padding: 0 24px 24px 24px;
+}
+#section .sc-wrap .sc3 .book-info .book-publisher-review .publisher-review p {
+  color: #555;
+}
+#section .sc-wrap .sc3 .book-info .b h3 {
+  position: relative;
+}
+#section .sc-wrap .sc3 .book-info .b h3::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/bookDetail/down-arr.d029dc0d18bf2df0bdc55a6cf39b8a88.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#section .sc-wrap .sc3 .book-info .b .bgi::before {
+  background-image: url("https://d3udu241ivsax2.cloudfront.net/v3/images/bookDetail/up-arr.41d84a6ed91a0ced079afc48c584e744.png");
+}
+#section .sc-wrap .sc3 .book-info .b .bc {
+  display: none;
+  line-height: 22px;
+}
+#section .sc-wrap .sc3 .book-review {
+  width: 100%;
+  padding: 24px;
+}
+#section .sc-wrap .sc3 .book-review h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 700;
+}
+#section .sc-wrap .sc3 .book-review .review {
+  width: 100%;
+}
+#section .sc-wrap .sc3 .book-review .review li {
+  width: 100%;
+  display: flex;
+}
+#section .sc-wrap .sc3 .book-review .review li:not(:first-child) {
+  margin-top: 18px;
+}
+#section .sc-wrap .sc3 .book-review .review li:not(:first-child) .rv .us strong {
+  display: none;
+}
+#section .sc-wrap .sc3 .book-review .review li .profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin-right: 8px;
+  background-image: url("https://d3uz7kn1zskbbz.cloudfront.net/profile/61527672a4f15.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#section .sc-wrap .sc3 .book-review .review li .rv {
+  flex: 1;
+  line-height: initial;
+}
+#section .sc-wrap .sc3 .book-review .review li .rv .us {
+  font-size: 12px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+}
+#section .sc-wrap .sc3 .book-review .review li .rv .us strong {
+  margin-left: 4px;
+  padding: 0 2px 0 8px;
+  position: relative;
+}
+#section .sc-wrap .sc3 .book-review .review li .rv .us strong::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #555;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+#section .sc-wrap .sc3 .book-review .review li .rv .us .best {
+  color: #ffb904;
+}
+#section .sc-wrap .sc3 .book-review .review li .rv .us .rank {
+  color: #a451f7;
+}
+#section .sc-wrap .sc3 .book-review .review li .rv .date {
+  font-size: 10px;
+  padding-bottom: 2px;
+  color: #8b8b8b;
+  display: block;
+  line-height: 15px;
+}
+#section .sc-wrap .sc3 .book-review .review li .rv pre {
+  margin: 4px 0;
+}
+#section .sc-wrap .sc3 .book-review .review li .rv .like {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#section .sc-wrap .sc3 .book-review .review li .rv .like p {
+  font-size: 12px;
+  color: #8b8b8b;
+}
+#section .sc-wrap .sc3 .book-review .review li .rv .like .lb {
+  width: 44px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8b8b8b;
+  background-color: transparent;
+  color: #8b8b8b;
+  border-radius: 100px;
+}
+#section .sc-wrap .sc3 .book-review .review li .rv .like .lb img {
+  width: 16px;
+}
+#section .sc-wrap .sc3 .book-review .review li .rv .like .lb span {
+  margin-left: 3px;
+}
+#section .sc-wrap .sc3 .book-review .wrv {
+  width: 100%;
+  display: flex;
+  margin-top: 24px;
+}
+#section .sc-wrap .sc3 .book-review .wrv .profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin: 8px 8px 0 0;
+  background-image: url("https://d3uz7kn1zskbbz.cloudfront.net/profile/61527672a4f15.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#section .sc-wrap .sc3 .book-review .wrv .tbox {
+  flex: 1;
+  height: 76px;
+  display: flex;
+  flex-direction: column;
+}
+#section .sc-wrap .sc3 .book-review .wrv .tbox label {
+  height: calc(100% - 21px);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  color: #8b8b8b;
+}
+#section .sc-wrap .sc3 .book-review .wrv .tbox label span {
+  font-size: 10px;
+  margin-bottom: 1px;
+}
+#section .sc-wrap .sc3 .book-review .wrv .tbox label textarea {
+  flex: 1;
+  width: 100%;
+  border: 0;
+  background-color: #fff;
+  line-height: 1.15;
+  resize: none;
+  font-size: 16px;
+  outline: none;
+  overflow-y: hidden;
+}
+#section .sc-wrap .sc3 .book-review .wrv .tbox label textarea::-moz-placeholder {
+  color: #c1c1c1;
+}
+#section .sc-wrap .sc3 .book-review .wrv .tbox label textarea::placeholder {
+  color: #c1c1c1;
+}
+#section .sc-wrap .sc3 .book-review .wrv .tbox .tn {
+  text-align: right;
+  padding: 2px 8px 0;
+  font-size: 12px;
+  color: #8b8b8b;
+}
+#section .sc-wrap .sc3 .book-review .wrv button {
+  width: 64px;
+  height: 57px;
+  margin-left: 8px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  opacity: 0.4;
+  line-height: 1.15;
+  font-size: 16px;
+}
+#section .sc-wrap .sc4 {
+  width: 100%;
+  height: 173.69px;
+}
+#section .sc-wrap .sc4 img {
+  width: 100%;
+}
+#section .sc-wrap .sc5 {
+  width: 100%;
+  padding: 24px 0;
+}
+#section .sc-wrap .sc5 h3 {
+  margin: 0 0 12px 24px;
+  font-size: 16px;
+  font-weight: 700;
+}
+#section .sc-wrap .sc5 .slider {
+  width: 100%;
+  overflow: hidden;
+}
+#section .sc-wrap .sc5 .slider .slider-inner {
+  width: 140.5%;
+  display: flex;
+  pointer-events: none;
+}
+#section .sc-wrap .sc5 .slider .slider-inner .slider-item {
+  width: 145px;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+#section .sc-wrap .sc5 .slider .slider-inner .slider-item:first-child {
+  margin-left: 24px;
+}
+#section .sc-wrap .sc5 .slider .slider-inner .slider-item .cover {
+  width: 100%;
+  height: 210.25px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1), 0 0 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0 4px 4px 0;
+  overflow: hidden;
+}
+#section .sc-wrap .sc5 .slider .slider-inner .slider-item .cover img {
+  width: 100%;
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+}
+#section .sc-wrap .sc5 .slider .slider-inner .slider-item .info {
+  width: 100%;
+  padding-top: 12px;
+}
+#section .sc-wrap .sc5 .slider .slider-inner .slider-item .info h3 {
+  width: 100%;
+  font-size: 16px;
+  padding-top: 12px;
+  margin-bottom: 3px;
+  margin: 0;
+}
+#section .sc-wrap .sc5 .slider .slider-inner .slider-item .info p {
+  color: #6f6f6f;
+}
+#section .side-menu {
+  width: 280px;
+  border-left: 1px solid #dfdfdf;
+  position: relative;
+  top: 0;
+}
+#section .side-menu .side-menu-wrap {
+  width: 100%;
+  height: calc(100vh - 64px);
+  position: sticky;
+  top: 64px;
+}
+#section .side-menu .side-menu-wrap nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+#section .side-menu .side-menu-wrap nav ul {
+  width: 100%;
+}
+#section .side-menu .side-menu-wrap nav ul li {
+  width: 100%;
+  height: 48px;
+  border-bottom: 1px solid #dfdfdf;
+  display: flex;
+  align-items: center;
+  padding-left: 56px;
+  font-weight: 700;
+  background-size: 24px;
+  background-position: 24px, center;
+  background-repeat: no-repeat;
+}
+#section .side-menu .side-menu-wrap .read-book {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 16px;
+  z-index: 10;
+}
+#section .side-menu .side-menu-wrap .read-book .read {
+  width: 248px;
+  height: 50px;
+  font-size: 16px;
+  background-color: #333;
+  font-family: "Spoqa Han Sans Neo";
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+}

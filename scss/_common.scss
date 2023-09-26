@@ -1,28 +1,39 @@
 @charset "utf-8";
 
-@font-face {
-    font-family: 'SpoqaHanSansNeo-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
 
-$basic: 'SpoqaHanSansNeo-Regular';
+$basic: 'Spoqa Han Sans Neo';
+
 $basic_c: #242424;
 $basic_c2: #555;
+$basic_c3: #6f6f6f;
+$basic_c4: #8b8b8b;
+$basic_c5: rgb(79, 192, 104);
+$basic_c6: #a451f7;
+$basic_c7:#ffb904;
+
 $bgc: #f7f7f7;
+$bgc2: #ffeb60;
+$bgc3: #fafaf6;
+
+$border: #dfdfdf;
+$border2: #c1c1c1;
+$border3: #f7f7f7;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $basic;
 }
 
 body {
-    font-family: $basic;
     color: $basic_c;
-    letter-spacing: -1px;
+    letter-spacing: -.6px;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 a {
@@ -33,6 +44,10 @@ ul,
 li,
 ol {
     list-style: none;
+}
+
+button {
+    letter-spacing: -.6px;
 }
 
 header {
@@ -46,6 +61,7 @@ header {
     background-color: hsla(0, 0%, 100%, .9);
     position: sticky;
     top: 0;
+    z-index: 10;
 
     .logo {
         width: 56px;
@@ -78,12 +94,8 @@ header {
         .login {
             width: 81.33px;
             height: 32px;
-            font-family: $basic;
             font-size: 12px;
-            border: none;
-            border-radius: 100px;
-            background-color: #333;
-            color: #fff;
+            @include basic_button;
         }
     }
 }
@@ -94,42 +106,190 @@ header {
         font-size: 49px;
         font-weight: 700;
         line-height: 130%;
-        letter-spacing: -2px;
+        letter-spacing: -.01em;
+        margin-bottom: 24px;
+        opacity: 0;
     }
 
     p {
         font-size: 22px;
         color: $basic_c2;
         line-height: 160%;
+        opacity: 0;
     }
 
     &C {
         text-align: center;
         margin-bottom: 60px;
-
-        h2 {
-            margin-bottom: 24px;
-        }
     }
 }
 
-.bottom{
+.bottom {
     width: 100%;
     display: flex;
     justify-content: center;
     position: fixed;
     bottom: 0;
     padding-bottom: 16px;
+    z-index: 10;
 
-    .sub_script{
+    .sub_script {
         width: 450px;
         height: 56px;
-        background-color: #333;
-        font-family: $basic;
-        color: #fff;
         font-size: 16px;
-        border: none;
-        border-radius: 100px;
+        @include basic_button;
     }
-    
+
+}
+
+footer {
+    width: 100%;
+    // background-color: $bgc;
+    padding-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+
+    .f-wrap {
+        width: 1440px;
+        padding: 24px 16px 32px;
+
+        .f1 {
+            width: 100%;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            .social {
+                display: flex;
+
+                .insta {
+                    @include social_icon;
+
+                    margin-right: 8px;
+
+                    background: {
+                        image: url('https://d3udu241ivsax2.cloudfront.net/v3/images/common/sns-instagram.ba9357bd6c1bb50854389e9f15f76d76.png');
+                        size: cover;
+                    }
+                }
+
+                .yutube {
+                    @include social_icon;
+
+                    margin-right: 8px;
+
+                    background: {
+                        image: url('https://d3udu241ivsax2.cloudfront.net/v3/images/common/sns-youtube.b399a84a750e221ded9fef98ddeca396.png');
+                        size: cover;
+                    }
+                }
+
+                .kakao {
+                    @include social_icon;
+
+                    background: {
+                        image: url('https://d3udu241ivsax2.cloudfront.net/v3/images/common/sns-kakaotalk.fa50e1326498ebcac6ba4a1e68f66882.png');
+                        size: cover;
+                    }
+                }
+            }
+        }
+
+        .f2 {
+            width: 100%;
+
+            .company-info {
+                color: #a5a5a5;
+                font-size: 10px;
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    width: 94.96px;
+                    padding-right: 12px;
+                    cursor: pointer;
+
+                    background: {
+                        image: url('https://d3udu241ivsax2.cloudfront.net/v3/images/common/down-arr.0b293f1f10f97e5a2a744710ef0d1133.png');
+
+                        position: {
+                            x: right;
+                            y: center;
+                        }
+
+                        size: 12px;
+                        repeat:no-repeat
+                    }
+                }
+
+                .c-info {
+                    margin-top: 8px;
+                    padding-right: 12px;
+                    display: none;
+
+                    ul {
+                        display: flex;
+
+                        &:last-child {
+                            margin-top: 12px;
+                        }
+
+                        li {
+                            line-height: 16px;
+
+                            &:not(:last-child) {
+                                margin-right: 12px;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .info-m {
+                font-size: 12px;
+                color: $basic_c3;
+                margin-top: 24px;
+                display: flex;
+
+                li {
+
+                    padding-right: 12px;
+
+                    &:not(:last-child) {
+                        margin-right: 12px;
+                    }
+
+                    &:nth-of-type(2) {
+                        font-weight: 700;
+                    }
+
+                    background: {
+                        image: url('https://d3udu241ivsax2.cloudfront.net/v3/images/common/small-gray-arr.4f0a51f549bc24f1bcee05d95f6a97f6.png');
+
+                        position: {
+                            x: right;
+                            y: center;
+                        }
+
+                        size: 12px;
+                        repeat:no-repeat
+                    }
+                }
+            }
+
+            .copy-right {
+                font-size: 10px;
+                color: $basic_c3;
+                margin-top: 24px;
+            }
+        }
+    }
 }
